@@ -24,7 +24,7 @@ Automate creation of Waffle epics via creating GitHub using GHI
 ##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
   
   * **EXAMPLE**
-    1. DIM_CUSTOMER _(This could be the main / epic issue )
+    1. DIM_CUSTOMER _(This could be the main / epic issue)_
        1. Gather business requirements
        2. Analysis of source data
        3. Source-to-Target mapping
