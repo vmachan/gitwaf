@@ -22,3 +22,6 @@ Automate creation of projects via creating Git issues using GHI
  
 #### Given a main (epic) task title and description, this project would generate the appropriate GitHub issues for the main as well as the standardized sub-issues and tag them per the Waffle convention so that they are grouped as a Waffle epic and can be used to track its progress.
 
+### Inspite of adding a requirement to comply with standardized development process, this code reduces the time to get started and overall time-to-market
+
+##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
