@@ -9,16 +9,17 @@ Automate creation of Waffle epics via creating GitHub using GHI
   * GHI installed (available here - https://github.com/stephencelis/ghi)
 
 * USAGE: 
-  * Copy code to repositories root folder
-  * Create your EPIC template
-    * Every EPIC is mapped to its own folder and the folder contains the respective .md files for each child task
+  * It is assumed that you have setup GHI and are able to successfully run GHI commands 
+  * Copy code to repository's root folder
+  * Create your EPIC template folder
+    * Every EPIC template is mapped to its own folder and the folder contains the respective .md files for each child task
     * The child task .md file names start with 0 (for the EPIC issue) and in increasing order where 2 depends on 1, 3 depends on 2 and so on
     * The code consists a sample for data warehouses (dw-epic) with 7 child task templates
- * It is assumed that you have setup GHI and are able to successfully run GHI commands 
- * Once above content is created, execute the following command
+    * **NOTE** The first line of the main task (file starting with 0) has the title of the EPIC.
+   * Once above content is created, execute the following command
     ./create_epic.sh <EPIC FOLDER NAME>
-    * Example: ./create_epic.sh dw-epic
- * Check your GitHub repository as well as Waffle project mapped to the repository to see the cards and dependencies   
+      * Example: ./create_epic.sh dw-epic
+   * Check your GitHub repository as well as Waffle project mapped to the repository to see the cards and dependencies   
 
 #### On data warehouse projects, tasks required to implement every physical entity (table) could be grouped under an epic
 ##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
