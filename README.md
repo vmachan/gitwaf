@@ -1,9 +1,15 @@
 # gitwaf
-Automate creation of projects via creating Git issues using GHI
+Automate creation of Waffle epics via creating GitHub using GHI
 
-**Premise**: Given a logical main topic or in Waffle terms "epic", this code creates the epic as well as the standardized sub-tasks that are children of the Epic task.
+**Premise**: Given a logical main topic or in Waffle terms "epic", this code creates the epic as well as the standardized sub-tasks that are children of the Epic task. 
+
+* Pre-requisites
+  * GitHub account and repository
+  * Waffle account and project created on Github repository
+  * GHI installed (available here - https://github.com/stephencelis/ghi)
 
 #### On data warehouse projects, tasks required to implement every physical entity (table) could be grouped under an epic
+##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
   
   * **EXAMPLE**
     1. DIM_CUSTOMER _(This could be the main / epic issue )
@@ -20,8 +26,6 @@ Automate creation of projects via creating Git issues using GHI
     * _EXAMPLE: Some standard questions to ask when collecting requirements_
     * _EXAMPLE: Standard (MIN, MAX, MEAN, MEDIAN, NULL value percentage, etc.) data statistics to be collected during data analysis_
  
-#### Given a main (epic) task title and description, this project would generate the appropriate GitHub issues for the main as well as the standardized sub-issues and tag them per the Waffle convention so that they are grouped as a Waffle epic and can be used to track its progress.
 
 ### Inspite of adding a requirement to comply with standardized development process, this code reduces the time to get started and overall time-to-market
 
-##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
