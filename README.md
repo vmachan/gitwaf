@@ -6,7 +6,9 @@ Automate creation of Waffle epics via creating GitHub using GHI
 * Pre-requisites
   * GitHub account and repository
   * Waffle account and project created on Github repository
+    * **NOTE** A Waffle account is only needed if you plan to use Waffle to manage your project(s).
   * GHI installed (available here - https://github.com/stephencelis/ghi)
+    * Use the above link to get information and instructions about GHI. 
 
 * USAGE: 
   * It is assumed that you have setup GHI and are able to successfully run GHI commands 
