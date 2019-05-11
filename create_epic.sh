@@ -8,6 +8,15 @@ then
   exit 1
 fi
 
+if test -z "$GITHUB_USER"
+then
+  echo "Environment variable GITHUB_USER is not set!!"
+  echo "Please set it and re-run command."
+  echo ""
+  echo ""
+  exit 1
+fi
+
 TMPL_FOLDER=$1
 
 cd $TMPL_FOLDER
