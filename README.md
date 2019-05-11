@@ -1,6 +1,8 @@
 # gitwaf
 Automate creation of Waffle epics via creating GitHub using GHI
 
+### UPDATE (May 11th 2019): Waffle has announced that it will be [retired by May 16th 2019](https://waffle.io/). You should still be able to use this script to create GitHub issues with dependencies
+
 **Premise**: Given a logical main topic or in Waffle terms "epic", this code creates the epic as well as the standardized sub-tasks that are children of the Epic task. 
 
 * Pre-requisites
@@ -18,10 +20,13 @@ Automate creation of Waffle epics via creating GitHub using GHI
     * The child task .md file names start with 0 (for the EPIC issue) and in increasing order where 2 depends on 1, 3 depends on 2 and so on
     * The code consists a sample for data warehouses (dw-epic) with 7 child task templates
     * **NOTE** The first line of the main task (file starting with 0) has the title of the EPIC.
-   * Once above content is created, execute the following command
-    ./create_epic.sh <EPIC FOLDER NAME>
-      * Example: ./create_epic.sh dw-epic
-   * Check your GitHub repository as well as Waffle project mapped to the repository to see the cards and dependencies   
+   * Set the environment variable GITHUB_USER to your github user
+     * `export GITHUB_USER=vicsmith`
+   * Make the shell scripts executable by running following command
+     * `chmod u+x *sh`
+   * Now execute the following command to create the GitHub issues based on your template folder
+     * `./create_epic.sh <EPIC FOLDER NAME>`
+   * Use your browser to check your GitHub repository as well as Waffle project mapped to the repository to see the cards and dependencies   
 
 #### On data warehouse projects, tasks required to implement every physical entity (table) could be grouped under an epic
 ##### This sets a standard for the development thought process, has consistent steps across epics and makes reporting consistent. 
